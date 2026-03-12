@@ -6,6 +6,7 @@ import {
   ChevronRightIconComponent,
   ClockIconComponent,
   HomeIconComponent,
+  HorizontalRuleIconComponent,
   InfoIconComponent,
   OpAlarmIconComponent,
   OpAlarmSetIconComponent,
@@ -100,6 +101,10 @@ import {
   BriefcaseIconComponent,
   CircleSlashIconComponent
 } from '@openproject/octicons-angular';
+import {
+  RulerIconComponent,
+  ProtractorIconComponent
+} from '@glavoc/octicons-angular';
 
 @NgModule({
   imports: [
@@ -205,6 +210,9 @@ import {
     VersionsIconComponent,
     BriefcaseIconComponent,
     CircleSlashIconComponent,
+
+    RulerIconComponent,
+    ProtractorIconComponent,
   ],
   declarations: [
     OpIconComponent,
@@ -312,6 +320,9 @@ import {
     VersionsIconComponent,
     BriefcaseIconComponent,
     CircleSlashIconComponent,
+
+    RulerIconComponent,
+    ProtractorIconComponent
   ],
 })
 

@@ -429,7 +429,7 @@ module Settings
       },
       edition: {
         format: :string,
-        default: "standard",
+        default: "bim",
         description: "OpenProject edition mode",
         writable: false,
         allowed: %w[standard bim]

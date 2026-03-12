@@ -111,6 +111,7 @@
     "@ng-select/ng-select": "^20.1.0",
     "@ngneat/content-loader": "^7.0.0",
     "@openproject/octicons-angular": "^19.32.0",
+    "@glavoc/octicons-angular": "^1.0.6",
     "@openproject/primer-view-components": "^0.82.0",
     "@openproject/reactivestates": "^3.0.1",
     "@primer/css": "^22.1.0",

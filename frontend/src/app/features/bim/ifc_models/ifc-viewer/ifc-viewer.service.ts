@@ -136,6 +136,16 @@ export class IFCViewerService extends ViewerBridgeService {
 
     viewerUI.loadProject(projects[0].id);
 
+    const viewerAny = viewerUI as unknown as {
+      _measureDistanceTool?: {
+        _distanceMeasurementsPlugin?: { _container: HTMLElement };
+        _angleMeasurementsPlugin?: { _container: HTMLElement };
+      };
+    };
+    if (viewerAny._measureDistanceTool?._distanceMeasurementsPlugin) {
+      viewerAny._measureDistanceTool._distanceMeasurementsPlugin._container = elements.busyModelBackdropElement;
+    }
+
     viewerUI.on('addModel', () => { // "Add" selected in Models tab's context menu
       window.location.href = this.pathHelper.ifcModelsNewPath(this.currentProjectService.identifier!);
     });
